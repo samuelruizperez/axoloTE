@@ -1,0 +1,22 @@
+{
+    "queries":[
+        {"name": "n_inferred_TSS_promoter", "feature":"gene", "feature.anchor": "start", "distance":[1000,100], "internals": 0.8, "direction":"upstream", "show.attributes":"all"},
+        {"name": "n_inferred_TTS", "feature":"gene", "feature.anchor": "end", "distance":[100,1000], "internals": 0.8, "direction":"downstream", "show.attributes":"all"},
+        {"name": "n_cds", "feature":"CDS", "feature.anchor":["start", "center", "end"], "distance":[1,1], "internals": 0.8, "show.attributes":"all"},
+        {"name": "n_five_prime_utr", "feature":"five_prime_UTR", "feature.anchor":["start", "center", "end"], "distance":[1,1], "internals": 0.8, "show.attributes":"all"},
+        {"name": "n_three_prime_utr", "feature":"three_prime_UTR", "feature.anchor":["start", "center", "end"], "distance":[1,1], "internals": 0.8, "show.attributes":"all"},
+        {"name": "n_exonic", "feature":"exon", "feature.anchor":["start", "center", "end"], "distance":[1,1], "internals": 0.8, "show.attributes":"all"},
+        {"name": "n_intronic", "feature":"intron", "feature.anchor":["start", "center", "end"], "distance":[1,1], "internals": 0.8, "show.attributes":"all"},
+        {"name": "n_other_genic", "feature":"gene", "feature.anchor":["start", "center", "end"], "distance":[1,1], "internals": 0.1, "show.attributes":"all"},
+        {"name": "n_down5kb_gene", "feature":"gene", "feature.anchor": "end", "distance":[1,5000], "internals": 0.1, "direction":"downstream", "show.attributes":"all"},
+        {"name": "n_up5kb_gene", "feature":"gene", "feature.anchor": "start", "distance":[5000,1], "internals": 0.1, "direction":"upstream", "show.attributes":"all"},
+        {"name": "n_down10kb_gene", "feature":"gene", "feature.anchor": "end", "distance":[1,10000], "internals": 0.1, "direction":"downstream", "show.attributes":"all"},
+        {"name": "n_up10kb_gene", "feature":"gene", "feature.anchor": "start", "distance":[10000,1], "internals": 0.1, "direction":"upstream", "show.attributes":"all"},
+        {"name": "n_down50kb_gene", "feature":"gene", "feature.anchor": "end", "distance":[1,50000], "internals": 0.1, "direction":"downstream", "show.attributes":"all"},
+        {"name": "n_up50kb_gene", "feature":"gene", "feature.anchor": "start", "distance":[50000,1], "internals": 0.1, "direction":"upstream", "show.attributes":"all"},
+        {"name": "n_intergenic_region", "feature":"intergenic_region", "feature.anchor":["start", "center", "end"], "distance":[1,1], "internals": 0.1, "show.attributes":"all"}
+    ],
+    "priority": "True",
+    "gtf": "/home/jgrandvallet/sruizperez/projects/axolotl/ext_data/axolotl_genome/AmexT_v47-AmexG_v6.0-DD/AmexT_v47-AmexG_v6.0-DD.wIntrons.wIntergenic.sorted.gtf",
+    "bed": "/home/jgrandvallet/sruizperez/projects/axolotl/rnaseq/DEA_consensus/DEREsxDEGs/all_diffexp_results_re_loci.final.bed"
+    }
